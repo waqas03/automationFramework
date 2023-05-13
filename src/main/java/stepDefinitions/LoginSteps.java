@@ -1,7 +1,7 @@
 package stepDefinitions;
 
 
-import Pages.loginPage;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
@@ -12,7 +12,7 @@ import io.cucumber.java.en.When;
 
 
 public class LoginSteps  extends  BaseTest{
-     loginPage login = new loginPage();
+
     @Before
     public void beforeScenario()  {
         setup();

@@ -3,11 +3,11 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import static stepDefinitions.BaseTest.driver;
+
 
 public class loginPage  {
 
-
+private WebDriver driver;
 
     //Locator for username field
     By usrName = By.id("user-name");
@@ -17,6 +17,10 @@ public class loginPage  {
 
     //Locator for login button
     By loginBtn = By.id("login-button");
+
+    public loginPage(WebDriver driver) {
+        this.driver = driver;
+    }
 
     public void verifyUserIsOnLoginPage(){
         String URL = driver.getCurrentUrl();

@@ -3,7 +3,7 @@
 <suite name="Suite">
     <test  name="Functional Test">
         <classes>
-            <class name="runner.CucumberTestRunner"/>
+            <class name="runner.testrunner"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
